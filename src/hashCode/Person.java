@@ -5,11 +5,14 @@ public class Person {
 	private String name;
 	private long phoneNum;
 	private int age;
+	private int hashcode;
 	
+
 	public Person(String name,long phoneNum,int age) {
 		this.name = name;
 		this.phoneNum = phoneNum;
 		this.age = age;
+		hashcode = this.hashcode;
 	}
 	
 	public int hashCode() {
@@ -19,6 +22,9 @@ public class Person {
 			code = code + Character.valueOf(letter);
 		}
 		return code;
+	}
+	public int getHashcode() {
+		return hashcode;
 	}
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
