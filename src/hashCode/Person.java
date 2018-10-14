@@ -6,7 +6,7 @@ public class Person {
 	private long phoneNum;
 	private int age;
 	private int hashcode;
-	
+	Person next;
 
 	public Person(String name,long phoneNum,int age) {
 		this.name = name;
